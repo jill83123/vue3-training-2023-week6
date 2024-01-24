@@ -71,12 +71,11 @@
                   <button
                     class="btn btn-sm"
                     @click="
-                      showCheck(
-                        'warning',
-                        '真的要刪除嗎',
-                        '刪除後將無法復原',
-                        () => (tempProduct.imageUrl = ''),
-                      )
+                      showCheck({
+                        fn: () => (tempProduct.imageUrl = ''),
+                        title: '刪除圖片',
+                        text: '刪除後將無法復原',
+                      })
                     "
                   >
                     ｘ
@@ -100,9 +99,11 @@
                     <button
                       class="btn btn-sm"
                       @click="
-                        showCheck('warning', '真的要刪除嗎', '刪除後將無法復原', () =>
-                          updateImage('del', img),
-                        )
+                        showCheck({
+                          fn: () => updateImage('del', img),
+                          title: '刪除圖片',
+                          text: '刪除後將無法復原',
+                        })
                       "
                     >
                       ｘ
