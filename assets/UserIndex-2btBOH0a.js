@@ -1,0 +1,1 @@
+import{_ as e,c as s,o as t,a as c}from"./index-nYsajjdU.js";const n={},o={class:"d-flex align-items-center justify-content-center",style:{height:"300px"}},a=c("h2",{class:"fs-6"},"將想法化作物品，讓花語傳達內心深處的心意",-1),r=[a];function _(i,d){return t(),s("div",o,r)}const l=e(n,[["render",_]]);export{l as default};
